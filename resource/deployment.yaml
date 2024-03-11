@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: spring-argocd-app
-          image: afshin28/spring-argocd-k8s:1d5a335adb5e7998a1bd4319a245a9361f028732
+          image: afshin28/spring-argocd-k8s:${{ github.sha }}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
